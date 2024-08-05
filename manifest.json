@@ -1,0 +1,22 @@
+{
+    "name":"Grocies",
+    "short_name":"Grocies",
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"white",
+    "theme_color":"#FFE1C4",
+    "orientation":"portrait-primary",
+    "icon":[
+          {  "src":"images/shopping-cart1.png",
+             "type":"image/png",
+              "sizes":"72x72"
+
+          }
+            ]
+
+
+
+
+
+
+}

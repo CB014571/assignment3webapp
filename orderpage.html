@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="styles/style7.css">
+    <script defer src="order.js"></script>
+</head>
+<body>
+    <h1>Order Details</h1>
+    <table id="orderTable">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price (per item/per kg)</th>
+                <th>Quantity/weight (kg)</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Items will be dynamically added here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: right;">Total Cost:</td>
+                <td id="totalCost">Rs. 0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Personal Details</h2>
+    <form id="orderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" name="address" required><br>
+        <label for="payment">Payment Information:</label>
+        <input type="text" id="payment" name="payment" required><br>
+        <button type="submit">Pay</button>
+    </form>
+    <div id="confirmationMessage" style="display: none;"></div>
+</body>
+</html>

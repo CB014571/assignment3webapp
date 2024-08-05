@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <script defer src="cart.js"></script>
+    <link rel="stylesheet" href="styles/cart.css">
+</head>
+<header>
+    <div class="logo1">
+        <img src="images/gro.png" height="200" width="250">
+    </div>
+    <nav class="navbar">
+     <ul>
+        <li><a href="Home.html" class="active">Home</a></li>
+        <li><a href="registration.html">Registration</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="product1.html">Daily Products</a></li>
+        <li><a href="product2.html">Vegetables</a></li>
+        <li><a href="product5.html">Fruits</a></li>
+        <li><a href="product4.html">Seafood and Meat</a></li>
+        <li><a href="product6.html">Cooking and baking ingredients</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+        <div class="search">
+            <input type="text" placeholder="Search..">
+            <button type="submit">Go</button>
+        </div>
+     </ul>   
+    </nav>   
+</header>
+<body>
+    <h1>Shopping Cart</h1>
+    <table id="cartTable">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price (per item/per kg)</th>
+                <th>Quantity/weight (kg)</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Items will be dynamically added here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="text-align: right;">Total Cost:</td>
+                <td id="totalCost">Rs. 0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <button id="addToFavouritesBtn">Add to Favourites</button>
+    <button id="applyFavouritesBtn">Apply Favourites</button>
+    <button id="clearCartBtn">Clear Cart</button>
+
+    <br>
+    <br>
+    <button id="buynowbtn"><a href="orderpage.html">Buy now</a></button>
+
+</body>
+</html>
+
+
+
