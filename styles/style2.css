@@ -1,0 +1,178 @@
+body {
+    background-color:whitesmoke ;
+  }
+  
+header {
+    background-color: black;
+  }
+  
+.logo1{
+    margin-left:7rem ;
+}
+  
+  .products {
+    padding: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+  }
+  
+  .product{
+    width: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-weight:400;
+    color: rgb(63, 63, 63);
+    background-color:whitesmoke;
+  
+  }
+  .product:hover {
+    background-color: azure;
+    padding:10.2px;
+  }
+  
+  .product img{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #2d2c2c;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  footer a:hover {
+    background-color: #ddd;
+  }
+  .navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: grey;
+    padding:10px ;
+}
+.navbar li{
+    float: left;
+    padding:20px ;
+}
+.navbar a{
+     color: white;
+     text-decoration: none;
+     display: block;
+     
+}               
+.navbar a:hover{
+     color: black ;
+     
+}
+.search{
+    display: flex;
+    margin-right:20px ;
+    float:right
+    
+}
+.search input{
+    
+    font-size: 16px;
+    border:1px solid black ;
+    border-radius: 0.5rem;
+
+}
+.search button{
+     padding:10px ;
+     font-size:16px ;
+     color:black;
+     cursor: pointer;  
+     border:none ;   
+}
+.search form{
+      display: flex;
+      margin: 0;
+}
+.addtobutton{
+      color:red;
+      border:rgb(244, 64, 64) 1px solid ;
+      font-weight: 500;
+      font-size:15px ;
+      background-color: whitesmoke;
+      padding:10px ;
+      width:200px ;
+      border-radius:4px ;
+      
+}
+.addtobutton:hover{
+     color:white;
+     background-color: rgb(193, 150, 150);
+}
+.cost{
+    background-color: #ccc;
+    padding:5px;
+}
+.button1{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #d2d2d2;
+  background-color: #ff4000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+  margin-left: 44rem;
+
+}
+.button1 a{
+      text-decoration: none;
+      color: azure;
+}
+.button1:hover{
+      background-color: #a8021b;
+}
+.footer {
+  background-color:black;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+}
+
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+
+.social-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+
+.social-link:hover {
+  text-decoration: underline;
+  color: #383636;
+}
+
+@media (max-width: 600px) {
+  .logo1{
+    margin-left: 4rem;
+} 
+
+}

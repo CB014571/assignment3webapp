@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+header{
+    background-color: black;
+}
+ 
+.logo1{
+    margin-left:7rem ;
+}
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: grey;
+    padding:10px ;
+}
+.navbar li{
+    float: left;
+    padding:20px ;
+}
+.navbar a{
+     color: white;
+     text-decoration: none;
+     display: block;
+     
+}               
+.navbar a:hover{
+     color: black ;
+} 
+.search{
+    display: flex;
+    margin-right:20px;
+    float:right;
+}
+
+.search input{
+    
+    font-size: 16px;
+    border:1px solid black ;
+    border-radius: 0.5rem;
+
+}
+.search button{
+     padding:10px ;
+     font-size:16px ;
+     color:black;
+     cursor: pointer;  
+     border:none ;  
+     background-color: aliceblue; 
+}
+.search form{
+      display: flex;
+      margin: 0;
+}
+    
+
+table{
+    width:90%;
+}
+td,th{
+    border:1px solid black;
+    font-size: medium;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(77, 74, 74);
+    
+}
+
+td{
+    background-color: white;
+}
+th{
+    background-color:gold;
+}
+
+
+
+.button1 {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color:rgb(182, 36, 36);
+    color: #fff;
+    border:1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.button1:hover {
+    background-color:rgb(219, 119, 119);
+}
+
+.footer{
+    margin-top: 10rem;
+}
+
+.footer {
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+
+.social-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+
+.social-link:hover {
+    text-decoration: underline;
+    color: #383636;
+}
+
+@media screen and (max-width: 600px) {
+    table{
+        width:60% ;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        display: none;
+    }
+    tr {
+        margin-bottom: 15px;
+    }
+    td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .form-inline {
+        display: flex;
+        align-items: center;
+    }
+    .form-inline label {
+        margin-right: 10px;
+    }
+    .button1 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+@media (max-width: 600px) {
+    .logo1{
+      margin-left: 4rem;
+  } 
+  
+  }

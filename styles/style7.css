@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#confirmationMessage {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 600px) {
+    .logo1{
+      margin-left: 4rem;
+  } 
+    .container{
+        box-shadow: none;
+    }
+  
+  }

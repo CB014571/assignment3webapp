@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:ghostwhite;
+}
+
+header{
+    background-color:black;
+}   
+.logo1{
+  margin-left:7rem ;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: goldenrod;
+}
+
+h1, h2 {
+    color: rgb(234, 207, 55);
+}
+h1,h2{
+    text-align: center;
+}
+.form2 {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: gold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+ol {
+    padding: 0;
+}
+
+ol li {
+    margin-left: 20px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color:rgb(224, 7, 7);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15rem;
+}
+
+button:hover {
+    background-color: #b33300;
+}
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: grey;
+    padding:10px ;
+}
+.navbar li{
+    float: left;
+    padding:20px ;
+}
+.navbar a{
+     color: white;
+     text-decoration: none;
+     display: block;
+     
+}               
+.navbar a:hover{
+     color: black ;
+     
+}
+
+footer{
+    background-color: gray;
+    padding-left: 10px;
+}
+.footer{
+    margin-top: 10rem;
+}
+
+.footer {
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+
+.social-link {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+
+.social-link:hover {
+    text-decoration: underline;
+    color: #383636;
+}
+@media (max-width: 600px) {
+    .logo1{
+      margin-left: 4rem;
+  } 
+  
+  }

@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    background-color: black;
+}   
+.logo1{
+  margin-left:7rem ;
+}
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1, h2 {
+    color: #333;
+  }
+
+  .venue-description {
+    margin-bottom: 20px;
+    background-color:rgb(225, 215, 160);
+    padding: 10px;
+    border:goldenrod solid 2px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+
+  .vegetable {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .cost{
+    background-color: #ccc;
+    padding:5px;
+}
+.addtobutton{
+  color:#FC2B4B;
+  border:red 1px solid ;
+  font-weight: 500;
+  font-size:15px ;
+  background-color: white;
+  padding:10px ;
+  width:200px ;
+  border-radius:4px ;
+  
+}
+.addtobutton:hover{
+ color:white;
+ background-color: #dd0021;
+}
+.navbar ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: grey;
+  padding:10px ;
+}
+.navbar li{
+  float: left;
+  padding:20px ;
+}
+.navbar a{
+   color: white;
+   text-decoration: none;
+   display: block;
+   
+}               
+.navbar a:hover{
+   color: black ;
+   
+}
+.search{
+  display: flex;
+  margin-right:20px ;
+  float:right
+  
+}
+.search input{
+  
+  font-size: 16px;
+  border:1px solid black ;
+  border-radius: 0.5rem;
+
+}
+.search button{
+   padding:10px ;
+   font-size:16px ;
+   color:black;
+   cursor: pointer;  
+   border:none ;   
+}
+.search form{
+    display: flex;
+    margin: 0;
+}
+
+.footer {
+  background-color:black;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+
+}
+
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.button1{
+  display: inline-block;
+  padding: 10px 20px;
+  color: #d2d2d2;
+  background-color: #ff4000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  align-items: center;
+  margin-left: 43rem;
+
+}
+.button1 a{
+    text-decoration: none;
+    color: #ccc;
+}
+
+.social-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+
+.social-link:hover {
+  text-decoration: underline;
+  color: #383636;
+}
+@media (max-width: 600px) {
+  .logo1{
+    margin-left: 4rem;
+} 
+
+}
