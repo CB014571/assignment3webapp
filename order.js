@@ -5,9 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
     let orderForm = document.getElementById('orderForm');
     let confirmationMessage = document.getElementById('confirmationMessage');
 
-    // Function to render order items
     function renderOrder() {
-        tableBody.innerHTML = ''; // Clear existing rows
+        tableBody.innerHTML = ''; 
 
         let totalCost = 0;
         cart.forEach((item) => {
@@ -28,20 +27,19 @@ document.addEventListener('DOMContentLoaded', () => {
         totalCostElement.textContent = `Rs. ${totalCost.toFixed(2)}`;
     }
 
-    // Render order items on page load
+   
     renderOrder();
 
-    // Handle form submission
+    
     orderForm.addEventListener('submit', (event) => {
         event.preventDefault();
 
-        // Validate form fields
+        
         let name = document.getElementById('name').value;
         let address = document.getElementById('address').value;
         let payment = document.getElementById('payment').value;
 
         if (name && address && payment) {
-            // Calculate delivery date (3 days from today)
             let deliveryDate = new Date();
             deliveryDate.setDate(deliveryDate.getDate() + 3);
             let deliveryDateString = `${deliveryDate.getDate()}/${deliveryDate.getMonth() + 1}/${deliveryDate.getFullYear()}`;
@@ -52,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             confirmationMessage.style.display = 'block';
             orderForm.style.display = 'none';
-            localStorage.removeItem('cart'); // Clear the cart after successful payment
+            localStorage.removeItem('cart');
         } else {
             alert('Please fill in all fields.');
         }
