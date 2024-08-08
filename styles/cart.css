@@ -1,163 +1,213 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: #444;
-}
-
-/* Table Styles */
-table {
-    width: 100%;
-    margin: 20px 0;
-    border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-th {
-    background-color: #f4f4f4;
-    color: #555;
-}
-
-tr:hover {
-    background-color: #f9f9f9;
-}
-
-img {
-    max-width: 100px;
-    height: auto;
-}
-
-/* Form Inputs */
-.quantity-input {
-    width: 60px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
-}
-
-/* Button Styles */
-.remove-btn, .update-btn, #addToFavouritesBtn, #applyFavouritesBtn, #clearCartBtn {
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 5px;
-    transition: background-color 0.3s ease;
-}
-.update-btn{
-    background-color: blue;
-}
-
-#addToFavouritesBtn, #applyFavouritesBtn {
-    background-color: #2ecc71;
-    align-items: center;
-}
-
-#clearCartBtn {
-    background-color: #e67e22;
-}
-
-.remove-btn:hover, .update-btn:hover, #addToFavouritesBtn:hover, #applyFavouritesBtn:hover, #clearCartBtn:hover {
-    opacity: 0.8;
-}
-
-/* Total Cost Display */
-#totalCost {
-    font-weight: bold;
-    color:rgb(5, 4, 4);
-    font-size: larger;
-    align-items: center;
-}
-
-/* Additional Body and Header Styles */
 body {
-    background-color: whitesmoke;
-}
-
-header {
+    font-family: Arial, sans-serif;
+    background-color:whitesmoke;
+    margin: 0;
+    padding: 0;
+  }
+header{
     background-color: black;
+}   
+.logo1{
+  margin-left:7rem ;
 }
 
-.logo1 {
-    margin-left: 7rem;
+  
+.navbar ul{
+  list-style-type: none;
+  overflow: hidden;
+  background-color: grey;
+  padding:10px ;
 }
-
-.navbar ul {
-    list-style-type: none;
-    overflow: hidden;
-    background-color: grey; 
-    padding: 10px;
+.navbar li{
+  float: left;
+  padding:20px ;
 }
-
-.navbar li {
-    float: left;
-    padding: 20px;
+.navbar a{
+   color: white;
+   text-decoration: none;
+   display: block;
+   
+}               
+.navbar a:hover{
+   color: black ;
+   
 }
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    display: block;
+.search{
+  display: flex;
+  margin-right:20px ;
+  float:right
+  
 }
+.search input{
+  
+  font-size: 16px;
+  border:1px solid black ;
+  border-radius: 0.5rem;
 
-.navbar a:hover {
-    color: black;
 }
-
-.search {
-    display: flex;
-    margin-right: 20px;
-    float: right;
+.search button{
+   padding:10px ;
+   font-size:16px ;
+   color:black;
+   cursor: pointer;  
+   border:none ;   
 }
-
-.search input {
-    font-size: 16px;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-}
-
-.search button {
-    padding: 10px;
-    font-size: 16px;
-    color: black;
-    cursor: pointer;
-    border: none;
-}
-
-.search form {
+.search form{
     display: flex;
     margin: 0;
 }
+h1 {
+    text-align: center;
+    color:gray;
+    margin-top: 20px;
+}
 
-#buynowbtn{
-    color:whitesmoke;
-    border:black 1px solid ;
-    font-weight: 500;
-    font-size:15px ;
-    background-color: rgb(158, 22, 22);
-    padding:10px ;
-    width:200px ;
-    border-radius:4px ;
-    align-items: center;
-    margin-left:4rem ;
-}  
-#buynowbtn a{
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table thead th {
+    padding: 15px;
+    text-align: left;
+}
+
+table tbody tr {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tbody td {
+    padding: 15px;
+    text-align: left;
+}
+
+tfoot td {
+    padding: 15px;
+    font-weight: bold;
+    background-color: #f1f1f1;
+    text-align: right;
+}
+
+tfoot td#totalCost {
+    color: #e53935;
+    text-align: right; 
+}
+
+tfoot td[colspan="4"] {
+    text-align: right; 
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Colors */
+button.remove-btn {
+    background-color: #e53935; 
+}
+
+button.remove-btn:hover {
+    background-color: #d32f2f;
+}
+
+button.update-btn {
+    background-color: #1E88E5; 
+}
+
+button.update-btn:hover {
+    background-color: #1565C0;
+}
+
+button#addToFavouritesBtn {
+    background-color: #8E24AA; 
+}
+
+button#addToFavouritesBtn:hover {
+    background-color: #7B1FA2;
+}
+
+button#applyFavouritesBtn {
+    background-color: #FFB300; 
+}
+
+button#applyFavouritesBtn:hover {
+    background-color: #FFA000;
+}
+
+button#clearCartBtn {
+    background-color: #FB8C00; 
+}
+
+button#clearCartBtn:hover {
+    background-color: #F57C00;
+}
+
+button#buynowbtn {
+    background-color: #43A047; 
+}
+
+button#buynowbtn:hover {
+    background-color: #388E3C;
+}
+
+button a {
+    color: white;
     text-decoration: none;
-    color:#ccc
+}
+
+button#buynowbtn a {
+    font-weight: bold;
+}
+.footer {
+  background-color:black;
+  padding: 20px;
+  text-align: center;
+  color: aliceblue;
+
+}
+
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+
+
+.social-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+
+.social-link:hover {
+  text-decoration: underline;
+  color: #383636;
+}
+@media (max-width: 600px) {
+  .logo1{
+    margin-left: 4rem;
+} 
 
 }

@@ -1,92 +1,201 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
-    padding: 20px;
+body{ background-color:whitesmoke;
+     
 }
+ 
+header{
+background-color:black;
+}     
 
-h1 {
+
+.logo1{
+margin-left:7rem ;
+margin-top:2rem ;
+}
+h1, h2 {
     text-align: center;
-    color: #444;
+    color: #4CAF50;
 }
 
 table {
-    width: 100%;
-    margin: 20px 0;
+    width: 90%;
+    margin: 20px auto;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
-    padding: 10px;
+table thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table thead th {
+    padding: 15px;
     text-align: left;
+}
+
+table tbody tr {
+    background-color: #ffffff;
     border-bottom: 1px solid #ddd;
 }
 
-th {
+table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tbody td {
+    padding: 15px;
+    text-align: left;
+}
+
+tfoot td {
+    padding: 15px;
+    font-weight: bold;
     background-color: #f4f4f4;
-    color: #555;
 }
 
-tr:hover {
-    background-color: #f9f9f9;
+tfoot td#totalCost {
+    color: #e53935;
 }
 
-img {
-    max-width: 100px;
-    height: auto;
+form#orderForm {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
+form#orderForm label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
-input {
-    width: 100%;
+form#orderForm input[type="text"] {
+    width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-button {
-    background-color: #3498db;
-    color: #fff;
+form#orderForm button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    padding: 10px 20px;
     border-radius: 4px;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #2980b9;
+form#orderForm button[type="submit"]:hover {
+    background-color: #45a049;
 }
 
 #confirmationMessage {
-    max-width: 600px;
+    width: 50%;
     margin: 20px auto;
     padding: 20px;
-    background-color: #2ecc71;
-    color: #fff;
-    border-radius: 4px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    border-radius: 8px;
+    display: none;
     text-align: center;
 }
 
+.navbar ul{
+   list-style-type: none;
+   overflow: hidden;
+   background-color: grey; 
+   padding:10px ;
+}
+.navbar li{
+   float: left;
+   padding:20px ;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    
+}               
+.navbar a:hover{
+    color: black ;
+    
+}
+
+footer{
+background-color: gray;
+padding-left: 10px;
+}
+
+.search{
+display: flex;
+margin-right:20px;
+float:right;
+}
+
+.search input{
+
+font-size: 16px;
+border:1px solid black ;
+border-radius: 0.5rem;
+
+}
+.search button{
+ padding:10px ;
+ font-size:16px ;
+ color:black;
+ cursor: pointer;  
+ border:none ;   
+}
+.search form{
+  display: flex;
+  margin: 0;
+}
+
+.footer{
+margin-top: 40rem;
+}
+
+.footer {
+background-color:black;
+padding: 20px;
+text-align: center;
+color: aliceblue;
+}
 
 
+.footer-content {
+margin-bottom: 20px;
+}
+
+
+.social-link {
+text-decoration: none;
+color: white;
+margin-right: 10px;
+}
+
+
+.social-link:hover {
+text-decoration: underline;
+color: #383636;
+}
 @media (max-width: 600px) {
-    .logo1{
-      margin-left: 4rem;
-  } 
-    .container{
-        box-shadow: none;
-    }
-  
-  }
+.footer{
+     margin-top: 120rem;
+}
+.image1{
+     float: right;
+     margin-right:20px;  
+}
+.logo1{
+     margin-left: 4rem;
+}
+
+}
